@@ -1,9 +1,14 @@
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react' 
-import { Link } from 'expo-router'
+import { Link, useRouter } from 'expo-router'
 import { FontAwesome } from '@expo/vector-icons'
 
 const index = () => {
+  const router = useRouter();
+  const handleLogin = () =>{
+
+    router.replace("/(tabs)/home")
+  }
   return (
     
     <View style ={styles.container}>
@@ -51,7 +56,7 @@ const index = () => {
       </View>
 
       
-      <TouchableOpacity style =
+      <TouchableOpacity onPress={handleLogin} style =
         {styles.loginButton}>
         <Text style =
         {styles.loginButtonText}>Login</Text>
