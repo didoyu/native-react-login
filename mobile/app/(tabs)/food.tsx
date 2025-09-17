@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet, Alert } from "react-native";
 
 const foods = [
-  { id: 1, name: "Burger", image: require("../../assets/images/burger.png") },
+  
   { id: 2, name: "Pizza", image: require("../../assets/images/pizza.png") },
   { id: 3, name: "Sushi", image: require("../../assets/images/sushi.png") },
   { id: 4, name: "Pasta", image: require("../../assets/images/pasta.png") },
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   button: {
-    backgroundColor: "#DA7807", // ✅ your theme color
+    backgroundColor: "#007AFF",
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 6,
